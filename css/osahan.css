@@ -1590,3 +1590,71 @@ img {
 }
 
 
+#a_rnd {}
+
+.bubble {
+  box-sizing: border-box;
+  width: auto;
+  position: relative;
+  clear: both;
+  border: solid 1px rgba(0,0,0,0.5);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  max-width: 500px;
+
+  -webkit-box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+  
+  margin-bottom: 20px;
+  padding: 6px 20px;
+  color: #000;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+  word-wrap: break-word;
+}
+
+.bubble:before, .bubble:after {
+  border-radius: 20px / 5px;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.bubble:before {
+  border: 10px solid transparent;
+  border-bottom-color: rgba(0,0,0,0.5);
+  bottom: 0px;
+  left: -7px;
+  z-index: -2;
+}
+
+.bubble:after {
+  border: 8px solid transparent;
+  border-bottom-color: #bee2ff; /* arrow color */
+  bottom: 1px;
+  left: -5px;
+}
+
+.bubble-alt:before {
+  left: auto;
+  right: -7px;
+}
+.bubble-alt:after {
+  left: auto;
+  right: -5px;
+}
+
+.rainbow{
+ background: -moz-linear-gradient(326deg, #fe6001 0%, #F4F60C 22%, #84fe01 41%, #01fe84 65%, #0196fe 100%);/* FF3.6+ */
+background: -webkit-gradient(linear, 326deg, color-stop(0%, #fe6001), color-stop(22%, #F4F60C), color-stop(41%, #84fe01), color-stop(65%, #01fe84), color-stop(100%, #0196fe));/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(326deg, #fe6001 0%, #F4F60C 22%, #84fe01 41%, #01fe84 65%, #0196fe 100%);/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(326deg, #fe6001 0%, #F4F60C 22%, #84fe01 41%, #01fe84 65%, #0196fe 100%);/* Opera 11.10+ */
+background: -ms-linear-gradient(326deg, #fe6001 0%, #F4F60C 22%, #84fe01 41%, #01fe84 65%, #0196fe 100%);/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe6001', endColorstr='#0196fe', GradientType='1'); /* for IE */
+background: linear-gradient(124deg, #fe6001 0%, #F4F60C 22%, #84fe01 41%, #01fe84 65%, #0196fe 100%);/* W3C */
+}
+
+.rainbow:after{
+    border-bottom-color: #0196fe;
+}
