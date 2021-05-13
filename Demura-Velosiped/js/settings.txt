@@ -1,7 +1,7 @@
 email='stepan@demura.tv';
 email2='';
 email3='';
-scact='https://stepandemura.ru/send_mail.php';
+scact='https://www.demura.tv/send_mail.php';
 send_to_client='1';
 prov_ogran_kolva='2';
 cookiehours='1';
@@ -61,5 +61,5 @@ autoupdate='2';
 reqfieldsstr='1|0|0|1|0|0';
 showfieldsstr="firstname|lastname|clientemail|phone|streetaddress|payment|";
 namefieldsstr="Имя|Фамилия|Е-майл|Номер телефона|Город|Тип платежа|";
-paymentsnamestr="Наличными при получении|https://stepandemura.ru/Demura-Sobaka/pay/ok.html|Банковской картой|https://stepandemura.ru/Demura-Sobaka/pay/ok.html|";
+paymentsnamestr="Наличными при получении|https://www.demura.tv/Demura-Velosiped/pay/ok.html|Банковской картой|https://www.demura.tv/Demura-Velosiped/pay/ok.html|";
 
