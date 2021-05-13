@@ -1,9 +1,3 @@
-/*
-Template Name: Степан Демура ру - сайт финансового аналитика Степана Демуры
-Author: Askbootstrap
-Author URI: https://themeforest.net/user/askbootstrap
-Version: 1.0
-*/
 (function($) {
   "use strict"; // Start of use strict
 
