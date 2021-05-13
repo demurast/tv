@@ -1,0 +1,29 @@
+﻿<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<span id=eng>
+Данные успешно отправлены!
+</span>
+<br><br>
+<span id=rus>Данные успешно отправлены!</span>
+<script language=javascript>
+function get_var(svar) {
+	ss=document.location.href.split("&");	
+	res="";
+	for (i=0;i<ss.length;i++) {		
+		if (ss[i].indexOf(svar)!=-1) {res=(ss[i].substring(ss[i].indexOf("=")+1,ss[i].length));}		
+	};	
+	return res;
+}
+if (get_var("lang")=="rus") 
+{
+	document.getElementById("eng").style.display="none";
+	if (get_var("shopurl")!="") {document.write("<a href="+get_var("shopurl")+">Назад</a>")}
+} 
+else 
+{
+	document.getElementById("rus").style.display="none";
+	if (get_var("shopurl")!="") {document.write("<a href="+get_var("shopurl")+">Назад</a>")}
+}
+
+</script>
+</center>
