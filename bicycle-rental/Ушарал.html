@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Сервис проката велосипедов в городе Ушарал">
+      <meta name="author" content="Алексеева Мария">
+      <title>Прокат велосипедов Ушарал</title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+      <link rel="icon" type="image/png" href="img/favicon.png">
+      <link href="helpin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="helpin/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="css/osahan.css" rel="stylesheet">
+      <link rel="stylesheet" href="helpin/owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="helpin/owl-carousel/owl.theme.css">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+   </head>
+   <body id="page-top">
+      <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
+         &nbsp;&nbsp; 
+         <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
+         <i class="fas fa-bars"></i>
+         </button> &nbsp;&nbsp;
+         <a class="navbar-brand mr-1" href="index.html"><img class="img-fluid" alt="" src="img/logo.png"></a>
+         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
+            <div class="input-group">
+               <input type="text" class="form-control" placeholder="Введите запрос...">
+               <div class="input-group-append">
+                  <button class="btn btn-light" type="button">
+                  <i class="fas fa-search"></i> 
+                  </button>
+               </div>
+            </div>
+         </form>
+         <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
+            <li class="nav-item mx-1">
+               <a class="nav-link" href="upload.html">
+               <i class="fas fa-plus-circle fa-fw"></i>
+               Загрузить видео
+               </a>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-bell fa-fw"></i>
+               <span class="badge badge-danger">9+</span>
+               </a>
+               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit "></i> &nbsp; Action</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+               <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-envelope fa-fw"></i>
+               <span class="badge badge-success">7</span>
+               </a>
+               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit "></i> &nbsp; Action</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown no-arrow osahan-right-navbar-user">
+               <a class="nav-link dropdown-toggle user-dropdown-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <img alt="Avatar" src="img/user.jpg">
+               Демура 
+               </a>
+               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                  <a class="dropdown-item" href="account.html"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
+                  <a class="dropdown-item" href="subscriptions.html"><i class="fas fa-fw fa-video"></i> &nbsp; Subscriptions</a>
+                  <a class="dropdown-item" href="settings.html"><i class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Logout</a>
+               </div>
+            </li>
+         </ul>
+      </nav>
+      <div id="wrapper">
+         <ul class="sidebar navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa-home"></i>
+               <span>Главная</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="channels.html">
+               <i class="fas fa-fw fa-users"></i>
+               <span>Каналы</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="Прокат-велосипедов-канал.html">
+               <i class="fas fa-fw fa-user-alt"></i>
+               <span>Велосипед канал</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="Прокат-велосипедов-видео.html">
+               <i class="fas fa-fw fa-video"></i>
+               <span>Видео велосипед</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="upload-video.html">
+               <i class="fas fa-fw fa-cloud-upload-alt"></i>
+               <span>Загрузить видео</span>
+               </a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-fw fa-folder"></i>
+               <span>Страницы</span>
+               </a>
+               <div class="dropdown-menu">
+                  <h6 class="dropdown-header">Вход в систему:</h6>
+                  <a class="dropdown-item" href="login.html">Логин</a>
+                  <a class="dropdown-item" href="register.html">Регистрация</a>
+                  <a class="dropdown-item" href="forgot-password.html">Восстановить пароль</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Другие страницы:</h6>
+                  <a class="dropdown-item" href="404.html">404 Страница</a>
+                  <a class="dropdown-item" href="blank.html">Пустая страница</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="history-page.html">
+               <i class="fas fa-fw fa-history"></i>
+               <span>Ваша история</span>
+               </a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="categories.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-fw fa-list-alt"></i>
+               <span>Категории</span>
+               </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="categories.html">Фильмы</a>
+                  <a class="dropdown-item" href="categories.html">Музыка</a>
+                  <a class="dropdown-item" href="categories.html">ТВ</a>
+               </div>
+            </li>
+            <li class="nav-item channel-sidebar-list">
+               <h6>ПОДПИСКИ</h6>
+               <ul>
+                  <li>
+                     <a href="subscriptions.html">
+                     <img class="img-fluid" alt="" src="img/velo-s-6.jpg"> Стиль жизни 
+                     </a>
+                  </li>
+                  <li>
+                     <a href="subscriptions.html">
+                     <img class="img-fluid" alt="" src="img/velo-s-3.jpg"> Распаковка  <span class="badge badge-warning">2</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="subscriptions.html">
+                     <img class="img-fluid" alt="" src="img/velo-s-7.jpg"> Видео обзоры  
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <div id="content-wrapper">
+            <div class="container-fluid pb-0">
+               <div class="video-block section-padding">
+                  <div class="row">
+                     <div class="col-md-8">
+                        <div class="single-video-left">
+                           <div class="single-video">
+
+<p><img alt="Новый велосипед" src="img/bicycle-rental/jamire-sarkis.jpg" /></p>
+
+                           </div>
+                           <div class="single-video-title box mb-3">
+                              <h2><a href="#">Прокат велосипедов Ушарал</a></h2>
+                              <p class="mb-0"><i class="fas fa-eye"></i> 2,729,347 просмотров</p>
+                           </div>
+                           <div class="single-video-author box mb-3">
+                              <div class="float-right"><button class="btn btn-danger" type="button">Подписаться <strong>1.4M</strong></button> <button class="btn btn btn-outline-danger" type="button"><i class="fas fa-bell"></i></button></div>
+                              <img class="img-fluid" src="img/user.png" alt="Велосипед">
+                              <p><a href="Прокат-велосипедов-канал.html"><strong>Велосипед канал</strong></a> <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></span></p>
+                              <small>Опубликовано Май 16, 2021</small>
+                           </div>
+                           <div class="single-video-info-content box mb-3">
+                              <h6>Руководитель велопроката:</h6>
+                              <p>Алексеева Мария</p>
+                              <h6>Категории:</h6>
+                              <p>Велосипед, Велопрокат, Аренда, Взять, Арендовать, Напрокат</p>
+                              <h6>О прокате велосипедов:</h6>
+
+
+
+
+<p>Рады, что вы посетили сайт проката велосипедов для гостей и жителей города Ушарал! На сайте вы сможете арендовать хороший велосипед. Аренда ретро велосипедов. С чего всё началось... Еду на работу на машине и вижу – не успеваю! Да, вроде и встал заранее, но отвлёкcя за завтраком и вот результат. Пробки забивают дороги, проскочить невозможно, к тому же бензин становится дороже с каждым днём. Час пик, добраться до места по городу вовремя сложно, чаще невозможно. Автомобильные пробки «съедают» время. Аренда ретро велосипедов. В большом городе каждая минута имеет свою цену и человек порой готов заплатить немалую сумму лишь бы добраться вовремя в нужное место. Поможет только вертолёт или… О! Точно! Есть идея! Прокат велосипедов в г. Ушарал. Вечером по пути домой заеду узнать.</p>
+
+
+
+<div style="padding:10px;background-color:#BDB76B">
+
+
+
+
+<h3>Дешёвый прокат велосипедов</h3>
+
+<p>Ну вот, прокат велосипедов в парке у дома в городе Ушарал, просто замечательно! На территории парка в прогулочной зоне объёмный вагончик, где предлагается аренда велосипедов. Горные велосипеды, наверное, нужны для спортсменов или ценителей экстрима. Точки проката велосипедов. Детские велосипеды – удобно можно взять на время, когда ребёнку вдруг загорелось покататься. Прогулочные и спортивные велосипеды для тех, кто любит активный отдых. Марки велосипедов в г. Ушарал: различные Merida, и Trek, и Giant, и Bergamont хорошо экипированы и достойного качества. Здесь же можно купить защитную экипировку: наколенники и налокотники, велошлемы. Забота о клиенте – важный аспект аренды велосипедов в городе. Авторитетно, в пункте проката велосипедов свой специалист по ремонту, соответственно, заботится о своей репутации и здоровье своих клиентов. Кстати, здесь можно сделать ремонт велосипеда, если у вас есть собственный железный конь. Важный момент! Парковки велосипедов расположены во всех районах города Ушарал. Где кататься на велосипеде. Удобно: арендовал велосипед в одном месте, припарковал в другом. Кстати, получить велосипед напрокат можно в пунктах проката по всему городу, как и сдать велосипед. Грамотно организована сеть, проката расположены в местах скопления большого количества народа: городские парки, места активного отдыха, чётко отлажен в г. Ушарал сервис проката велосипедов. Стоимость разумная...</p>
+
+
+
+</div>
+
+<h3>Какая стоимость на велосипеды?</h3>
+
+
+
+<p>Всё достаточно просто. Залог — это гарантия возврата велосипеда напрокат. В качестве залога клиент в городе Ушарал чаще всего предоставляет паспорт или же оплачивает в кассу полную стоимость велосипеда. Прокат великов. Это гарантия, что клиент будет аккуратно обращаться с транспортным средством и вернёт его точно в срок. Прокат велосипедов несёт в себе важную функцию – возможность сэкономить время, деньги и нервы, улучшить здоровье человека. Где кататься на велосипеде. На улицах города мы всё чаще видим велосипедистов. Велосипед в г. Ушарал расширяет горизонты возможностей человека. Еду в ногу со временем, сейчас это модно!</p>
+
+
+
+
+
+<ol>
+	<li>оставить заявку</li>
+	<li>подтвердить по телефону</li>
+	<li>получить велосипед</li>
+	<li>вернуть и расплатиться</li>
+</ol>
+
+
+
+<img alt="Городской велосипед" src="img/bicycle-rental/kodey-jaydyn.jpg" />
+
+
+
+<h3>Велосипед напрокат, как взять?</h3>
+
+<p>Онлайн заказ для аренды велосипеда в городе Ушарал очень удобно. Прокат детских велосипедов. В каталоге вы можете увидеть фото всех доступных для проката моделей и ознакомиться с их характеристиками. Выберите оптимальный велосипед и оформите онлайн-заявку на его аренду. В ней сообщите свои точные контактные данные, чтобы администратор прокатного пункта смог связаться с вами и получить подтверждение заказа. Укажите количество транспортных средств, время получения и возврата, чтобы автоматическая система сайта смогла рассчитать итоговую арендную плату с учётом возможной скидки. Велосипеды в парке напрокат. Воспользуйтесь выбранным велосипедом в г. Ушарал и верните его в заранее обговоренное время. Безопасных и приятных вам велопрогулок!</p>
+
+
+
+<p><a href="Абай">Абай</a> | <a href="Акколь">Акколь</a> | <a href="Аксай-К">Аксай-К</a> | <a href="Аксу">Аксу</a> | <a href="Актау">Актау</a> | <a href="Актобе">Актобе</a> | <a href="Алга">Алга</a> | <a href="Алма-Ата">Алма-Ата</a> | <a href="Аральск">Аральск</a> | <a href="Аркалык">Аркалык</a> | <a href="Арыс">Арыс</a> | <a href="Атбасар">Атбасар</a> | <a href="Атырау">Атырау</a> | <a href="Аягоз">Аягоз</a> | <a href="Байконур">Байконур</a> | <a href="Балхаш">Балхаш</a> | <a href="Булаево">Булаево</a> | <a href="Державинск">Державинск</a> | <a href="Ерейментау">Ерейментау</a> | <a href="Есик">Есик</a> | <a href="Есиль">Есиль</a> | <a href="Жанаозен">Жанаозен</a> | <a href="Жанатас">Жанатас</a> | <a href="Жаркент">Жаркент</a> | <a href="Жезказган">Жезказган</a> | <a href="Жем">Жем</a> | <a href="Жетысай">Жетысай</a> | <a href="Житикара">Житикара</a> | <a href="Зайсан">Зайсан</a> | <a href="Зыряновск">Зыряновск</a> | <a href="Казалинск">Казалинск</a> | <a href="Кандыагаш">Кандыагаш</a> | <a href="Капшагай">Капшагай</a> | <a href="Караганда">Караганда</a> | <a href="Каражал">Каражал</a> | <a href="Каратау">Каратау</a> | <a href="Каркаралинск">Каркаралинск</a> | <a href="Каскелен">Каскелен</a> | <a href="Кентау">Кентау</a> | <a href="Кокшетау">Кокшетау</a> | <a href="Костанай">Костанай</a> | <a href="Кульсары">Кульсары</a> | <a href="Курчатов-Ка">Курчатов-Ка</a> | <a href="Кызылорда">Кызылорда</a> | <a href="Ленгер">Ленгер</a> | <a href="Лисаковск">Лисаковск</a> | <a href="Макинск">Макинск</a> | <a href="Мамлютка">Мамлютка</a> | <a href="Нур-Султан">Нур-Султан</a> | <a href="Павлодар">Павлодар</a> | <a href="Петропавловск">Петропавловск</a> | <a href="Приозёрск">Приозёрск</a> | <a href="Риддер">Риддер</a> | <a href="Рудный">Рудный</a> | <a href="Сарань">Сарань</a</p>
+
+                              <h6>Тэги:</h6>
+                              <p class="tags mb-0">
+                                 <span><a href="#">Велосипед</a></span>
+                                 <span><a href="#">Велопрокат</a></span>
+                                 <span><a href="#">Прокат</a></span>
+                                 <span><a href="#">Прокатвелосипедов</a></span>
+                                 <span><a href="#">Арендавелосипеда</a></span>
+                                 <span><a href="#">Аренда</a></span>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="single-video-right">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="adblock">
+                                    <div class="img">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-4899300477767904"
+     data-ad-slot="5607895183"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || ).push();
+</script>
+                                    </div>
+                                 </div>
+                                 <div class="main-title">
+                                    <div class="btn-group float-right right-action">
+                                       <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       Упорядочить по <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                       </a>
+                                       <div class="dropdown-menu dropdown-menu-right">
+                                          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                       </div>
+                                    </div>
+                                    <h6>Следующее</h6>
+                                 </div>
+                              </div>
+                              <div class="col-md-12">
+                                 <div class="video-card video-card-list">
+                                    <div class="video-card-image">
+                                       <a class="play-icon" href="https://ad.admitad.com/g/47rub4kekv2672d1b68c5f4e53bb13/"><i class="fas fa-play-circle"></i></a>
+                                       <a href="#"><img class="img-fluid" src="img/v4.png" alt=""></a>
+                                       <div class="time">3:50</div>
+                                    </div>
+                                    <div class="video-card-body">
+                                       <div class="btn-group float-right right-action">
+                                          <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                          </div>
+                                       </div>
+                                       <div class="video-title">
+                                          <a href="https://ad.admitad.com/g/47rub4kekv2672d1b68c5f4e53bb13/">Тинькофф кредитная карта Platinum</a>
+                                       </div>
+                                       <div class="video-page text-success">
+                                          Кредит  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                                       </div>
+                                       <div class="video-view">
+                                          1.8M просмотров &nbsp;<i class="fas fa-calendar-alt"></i> 11 Дней назад
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="video-card video-card-list">
+                                    <div class="video-card-image">
+                                       <a class="play-icon" href="Прокат-велосипедов-видео.html"><i class="fas fa-play-circle"></i></a>
+                                       <a href="#"><img class="img-fluid" src="img/v4.png" alt=""></a>
+                                       <div class="time">1:20:08</div>
+                                    </div>
+                                    <div class="video-card-body">
+                                       <div class="btn-group float-right right-action">
+                                          <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                          </div>
+                                       </div>
+                                       <div class="video-title">
+                                          <a href="Прокат-велосипедов-видео.html">Демура отвечает на вопросы Фанимани</a>
+                                       </div>
+                                       <div class="video-page text-success">
+                                          Экономика  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                                       </div>
+                                       <div class="video-view">
+                                          1.8M просмотров &nbsp;<i class="fas fa-calendar-alt"></i> 1 День назад
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="video-card video-card-list">
+                                    <div class="video-card-image">
+                                       <a class="play-icon" href=""><i class="fas fa-play-circle"></i></a>
+                                       <a href="#"><img class="img-fluid" src="img/v4.png" alt=""></a>
+                                       <div class="time">2:31:59</div>
+                                    </div>
+                                    <div class="video-card-body">
+                                       <div class="btn-group float-right right-action">
+                                          <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                          </div>
+                                       </div>
+                                       <div class="video-title">
+                                          <a href="Сити-класс-22-апреля-2021-Степан-Демура.html">Сити класс 22 апреля 2021 - Степан Демура</a>
+                                       </div>
+                                       <div class="video-page text-success">
+                                          Экономика  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                                       </div>
+                                       <div class="video-view">
+                                          1.8M просмотров &nbsp;<i class="fas fa-calendar-alt"></i> 2 Дня назад
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="video-card video-card-list">
+                                    <div class="video-card-image">
+                                       <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                                       <a href="#"><img class="img-fluid" src="img/v4.png" alt=""></a>
+                                       <div class="time">3:50</div>
+                                    </div>
+                                    <div class="video-card-body">
+                                       <div class="btn-group float-right right-action">
+                                          <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                          </div>
+                                       </div>
+                                       <div class="video-title">
+                                          <a href="#">Deserunt mollit anim id est laborum.</a>
+                                       </div>
+                                       <div class="video-page text-success">
+                                          Экономика  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                                       </div>
+                                       <div class="video-view">
+                                          1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="video-card video-card-list">
+                                    <div class="video-card-image">
+                                       <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                                       <a href="#"><img class="img-fluid" src="img/v5.png" alt=""></a>
+                                       <div class="time">3:50</div>
+                                    </div>
+                                    <div class="video-card-body">
+                                       <div class="btn-group float-right right-action">
+                                          <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                          </div>
+                                       </div>
+                                       <div class="video-title">
+                                          <a href="#">Exercitation ullamco laboris nisi ut.</a>
+                                       </div>
+                                       <div class="video-page text-success">
+                                          Экономика  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                                       </div>
+                                       <div class="video-view">
+                                          1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="video-card video-card-list">
+                                    <div class="video-card-image">
+                                       <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                                       <a href="#"><img class="img-fluid" src="img/v6.png" alt=""></a>
+                                       <div class="time">3:50</div>
+                                    </div>
+                                    <div class="video-card-body">
+                                       <div class="btn-group float-right right-action">
+                                          <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                          </div>
+                                       </div>
+                                       <div class="video-title">
+                                          <a href="#">There are many variations of passages of Lorem</a>
+                                       </div>
+                                       <div class="video-page text-success">
+                                          Экономика  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                                       </div>
+                                       <div class="video-view">
+                                          1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="adblock mt-0">
+                                    <div class="img">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-4899300477767904"
+     data-ad-slot="2914105627"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || ).push();
+</script>                                       
+                                    </div>
+                                 </div>
+                                 <div class="video-card video-card-list">
+                                    <div class="video-card-image">
+                                       <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                                       <a href="#"><img class="img-fluid" src="img/v2.png" alt=""></a>
+                                       <div class="time">3:50</div>
+                                    </div>
+                                    <div class="video-card-body">
+                                       <div class="btn-group float-right right-action">
+                                          <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                             <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                                          </div>
+                                       </div>
+                                       <div class="video-title">
+                                          <a href="#">Duis aute irure dolor in reprehenderit in.</a>
+                                       </div>
+                                       <div class="video-page text-success">
+                                          Экономика  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                                       </div>
+                                       <div class="video-view">
+                                          1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <footer class="sticky-footer">
+               <div class="container">
+                  <div class="row no-gutters">
+                     <div class="col-lg-6 col-sm-6">
+                        <p class="mt-1 mb-0">&copy; Copyright 2021 <strong class="text-dark">Demura</strong>. All Rights Reserved<br>
+                           <small class="mt-0 mb-0">Made with <i class="fas fa-heart text-danger"></i> by <a class="text-primary" target="_blank" href="https://github.com/demurast/tv">Stepan Demura</a>
+                           </small>
+                        </p>
+                     </div>
+                     <div class="col-lg-6 col-sm-6 text-right">
+                        <div class="app">
+                           <a href="#"><img alt="" src="img/google.png"></a>
+                           <a href="#"><img alt="" src="img/apple.png"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+         </div>
+      </div>
+      <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+      </a>
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">?</span>
+                  </button>
+               </div>
+               <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+               <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                  <a class="btn btn-primary" href="login.html">Logout</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="helpin/jquery/jquery.min.js"></script>
+      <script src="helpin/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="helpin/jquery-easing/jquery.easing.min.js"></script>
+      <script src="helpin/owl-carousel/owl.carousel.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/chatbro.js"></script>
+      <script src="js/tawk.js"></script>
+<div style="display:none">     
+<a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licnt3147" width="88" height="120" style="border:0" 
+title="li"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+alt=""/></a><script>(function(d,s)d.getElementById("licnt3147").src=
+"https://counter.yadro.ru/hit?t29.1;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random())
+(document,screen)</script>
+</div>      
+   </body>
+</html>
+
+
+
